@@ -16,11 +16,7 @@ func (k *Karateka) GetName() string {
 }
 
 func (k *Karateka) Hit() (hitDamage int) {
-	if rand.Intn(2) == 0 {
-		hitDamage = k.FistDamage
-	} else {
-		hitDamage = k.FootDamage
-	}
+	hitDamage = k.FistDamage
 
 	return
 }
